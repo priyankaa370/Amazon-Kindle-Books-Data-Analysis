@@ -25,7 +25,7 @@ Amazon’s book dataset can be seen below with three tables: Books, Categories, 
 
 The data analysis focuses on the Amazon Kindle book sales performance and categorization. Key findings indicate most read and least read kindle books. Moreover, Kindle Unlimited is taken into consideration to study the effectiveness of the subscription service. Vendors and publishing dates are studied to know which vendors perform best and an interactive dashboard is available to find out each vendor’s books sold.
 
-Below is the Tableau dashboard and details of the analysis. The interactive dashboard can be viewed here.
+Below is the Tableau dashboard and details of the analysis. The interactive dashboard can be downloaded [here](https://github.com/priyankaa370/Amazon-Kindle-Books-Data-Analysis/blob/main/Kindle%20Books%20Data%20Analysis%20-%20Dashboard.twb).
 
 ![image](https://github.com/user-attachments/assets/da437aa5-5cea-4680-b7d6-1665dd35bb07)
 
