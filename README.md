@@ -30,7 +30,10 @@ Below is the Tableau dashboard and details of the analysis. The interactive dash
 ![image](https://github.com/user-attachments/assets/da437aa5-5cea-4680-b7d6-1665dd35bb07)
 
 
+
 **Categorical impact on the sales.**
+
+<img width="775" alt="Dashboard 2" src="https://github.com/user-attachments/assets/221214c3-657d-4124-b3bd-3a12c86dbffc">
 
 •	This chart displays the distribution of books across various genres, highlighting the number of books available through Kindle Unlimited. 
 
@@ -52,7 +55,7 @@ Below is the Tableau dashboard and details of the analysis. The interactive dash
 
 •	This is an interactive chart where the Vendor Manager team can select a particular vendor to know the sales by October 2023. It shows a wide disparity in the number of books sold by various vendors. 
 
-•	**Amazon.com (books sold - 48,962) ** is the dominant player, followed by publishers like **Hachette Book Group (3627)** and **Penguin Group USA LLC (3225)**. 
+•	**Amazon.com (books sold - 48,962)** is the dominant player, followed by publishers like **Hachette Book Group (3627)** and **Penguin Group USA LLC (3225)**. 
 
 •	This indicates that Amazon is the primary source for books, but vendors like Hachette and Penguin also have a strong presence. 
 
