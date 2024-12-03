@@ -6,7 +6,7 @@ Hence, they have significant amounts of data based on books, ratings, authors, a
 
 The focus will be on the following key areas:
 
-**Categorical impact on the sales.** An investigation on how different genres, such as History, Comics, or Business & Money, influence sales performance.
+**Categorical impact on sales.** An investigation on how different genres, such as History, Comics, or Business & Money, influence sales performance.
 
 **Book Review trends analysis.** An illustration of the trends in book reviews over time.
 
