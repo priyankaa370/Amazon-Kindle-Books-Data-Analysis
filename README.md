@@ -1,73 +1,180 @@
-# Amazon-Kindle-Books-Data-Analysis
+# Amazon Kindle Books Data Analysis
 
-Amazon Kindle books are digital eBooks available on Amazon's Kindle platform. These books can be purchased or borrowed and read using Kindle devices, the Kindle app (on smartphones, tablets, or computers), or directly through web browsers.  
+## Project Overview
 
-Hence, they have significant amounts of data based on books, ratings, authors, and vendors (traditional publishers, independent authors or other lenders). This project thoroughly analyzes this data to understand different factors and learn insights that will improve Amazon Kindle’s commercial success.
+This project analyzes sales performance, review behavior, genre trends, and vendor distribution within the Amazon Kindle ecosystem.
 
-The focus will be on the following key areas:
+Using a dataset of 133,103 records across Books, Categories, and Ratings tables, this analysis explores what drives engagement and commercial performance on Amazon’s Kindle platform.
 
-**Categorical impact on sales.** An investigation on how different genres, such as History, Comics, or Business & Money, influence sales performance.
+The objective is to generate actionable business insights that could support vendor management, marketing strategy, and subscription growth (Kindle Unlimited).
 
-**Book Review trends analysis.** An illustration of the trends in book reviews over time.
+## Business Questions
 
-**Vendor performance.** An analysis of the number of books sold by each vendor. 
+This analysis focuses on three core questions:
 
+How do different genres impact sales performance?
 
-## Data structure 
+How have book reviews evolved over time?
 
-Amazon’s book dataset can be seen below with three tables: Books, Categories, and Ratings, with a total of 133,103 rows.
+Which vendors dominate the Kindle marketplace?
+
+## Dataset Structure
+
+The dataset consists of three relational tables:
+
+• Books
+
+• Categories
+
+• Ratings
+
 
 ![Amazon Kindle book data drawio](https://github.com/user-attachments/assets/f7e3f910-7a0f-4052-98ed-375edcdcd171)
 
-## Executive Summary
+Total Records: 133,103
 
-**Overview of the findings**
+The structure allows joining sales, genre classification, publishing date, and review metrics for multidimensional analysis.
 
-The data analysis focuses on the Amazon Kindle book sales performance and categorization. Key findings indicate most read and least read kindle books. Moreover, Kindle Unlimited is taken into consideration to study the effectiveness of the subscription service. Vendors and publishing dates are studied to know which vendors perform best and an interactive dashboard is available to find out each vendor’s books sold.
+## Key Findings
 
-Below is the Tableau dashboard and details of the analysis. The interactive dashboard can be downloaded [here](https://github.com/priyankaa370/Amazon-Kindle-Books-Data-Analysis/blob/main/Kindle%20Books%20Data%20Analysis%20-%20Dashboard.twb).
+### 1. Genre Impact on Sales 
+  
+  Genre plays a major role in Kindle performance.
+  
+  **Top Performing Genre:**
+  
+  Mystery, Thriller & Suspense
+  → 6,250 books sold (as of October 2023)
+  
+  **Lowest Performing Genre:**
+  
+  Comics
+  
+  This suggests that certain genres translate better to digital formats, while others (like comics) may still perform stronger in physical formats.
+  
+  **Kindle Unlimited Insights:**
+  
+  High Availability in Subscription:
+  
+  Romance – 74.83%
+  
+  LGBTQ+ – 71.10%
+  
+  Science Fiction – 59.78%
+  
+  Low Availability:
+  
+  Political & Social Sciences – 6.53%
+  
+  Science & Math – 6.51%
+  
+  **Business Insight:**
+  There is an opportunity to expand underrepresented genres in Kindle Unlimited to diversify subscription appeal.
+
+### 2. Book Review Trends (Reader Engagement Analysis)
+
+Review volume shows a strong upward trend beginning around 2011, accelerating significantly after 2015.
+
+**Peak engagement:**
+
+5,717,924 reviews recorded in 2020
+
+Recent publications (2021–2023) show consistently high review counts, indicating strong reader engagement with newer titles.
+
+**Business Insight:**
+Growing review activity suggests increasing reader interaction. This can be leveraged through:
+
+- Targeted marketing campaigns
+
+- Highlighting highly reviewed titles
+
+- Encouraging review-based recommendation systems
+
+Reviews are a powerful feedback loop in digital marketplaces. They influence conversion rates, visibility, and ranking algorithms.
+
+### 3. Vendor Performance Analysis
+
+The vendor landscape shows significant concentration.
+
+Top Vendors by Books Sold (as of October 2023):
+
+- Amazon.com – 48,962
+
+- Hachette Book Group – 3,627
+
+- Penguin Group USA LLC – 3,225
+
+There is a large disparity between Amazon and third-party publishers.
+
+**Business Insight:**
+While Amazon dominates distribution, strategic partnerships with major publishers could enhance catalog depth and category diversity.
+
+An interactive Tableau dashboard allows vendor-level filtering to explore individual vendor sales performance.
+
+## Dashboard
+
+An interactive Tableau dashboard was developed to:
+
+- Filter vendor performance
+
+- Compare genre-level distribution
+
+- Visualize Kindle Unlimited penetration
+
+- Analyze review trends over time
 
 ![image](https://github.com/user-attachments/assets/da437aa5-5cea-4680-b7d6-1665dd35bb07)
 
+## Strategic Recommendations
+
+- Expand Kindle Unlimited coverage in underrepresented genres such as:
+
+  - Law
+  
+  - Parenting & Relationships
+  
+  - Business & Money
+
+- Leverage high-engagement genres (Mystery, Romance, Sci-Fi) in targeted acquisition campaigns.
+
+- Use review growth strategically:
+
+  - Highlight books with rapid review accumulation
+  
+  - Promote top-reviewed new releases
+  
+  - Integrate review velocity into marketing triggers
+
+- Strengthen partnerships with top-performing publishers to balance marketplace dominance and diversify catalog quality.
+
+## Technical Stack
+
+- SQL (data modeling and joins)
+
+- Tableau (interactive dashboard development)
+
+- Excel / Data preprocessing
+
+- Data visualization and exploratory analysis
+
+## Project Impact
+
+This project demonstrates the ability to:
+
+- Translate raw marketplace data into business insights
+
+- Identify growth opportunities in subscription services
+
+- Analyze engagement behavior at scale
+
+- Communicate findings through executive-ready dashboards
+
+The analysis combines commercial thinking with data-driven storytelling — a critical skill in product analytics and marketplace optimization roles.
 
 
-**Categorical impact on the sales.**
-
-<img width="775" alt="Dashboard 2" src="https://github.com/user-attachments/assets/221214c3-657d-4124-b3bd-3a12c86dbffc">
-
-•	This chart displays the distribution of books across various genres, highlighting the number of books available through Kindle Unlimited. 
-
-•	It reveals that **‘Mystery, Thriller, and Suspense’** books are very popular on Kindle having **6250** books sold till October 2023. Moreover, Comic books are least bought by the Kindle customers indicating that people like to prefer comics in hardcopies. 
-
-•	Speaking about the availability of books on Kindle Unlimited subscription platform, **Romance genre** has **74.83%** of books in Kindle Unlimited indicating that it is more prevalent within the service. And it is followed by **LGBTQ+(71.10%)** and **Science fiction (59.78)** books. 
-
-•	On the other hand, **Political & Social Sciences (6.53%)**, and **Science & Math (6.51%)** show lower availability, suggesting an opportunity to expand Kindle Unlimited's offerings in these areas.
-
-**Book Review trends analysis.**
-
-•	This line chart demonstrates a clear upward trend in the number of reviews, particularly after 2011.
-
-•	This increase is likely attributed to the rise of e-books and Kindle, with significant acceleration **post-2015**. Notably, books published in the last few years (2021-2023), achieving the highest review count of **5717924 in the year 2020**, are garnering more reviews, which suggests higher engagement from readers. 
-
-•	The growth in reviews indicates rising customer interest and could be leveraged to promote bestsellers or encourage further customer interaction.
-
-**Vendor performance.**
-
-•	This is an interactive chart where the Vendor Manager team can select a particular vendor to know the sales by October 2023. It shows a wide disparity in the number of books sold by various vendors. 
-
-•	**Amazon.com (books sold - 48,962)** is the dominant player, followed by publishers like **Hachette Book Group (3627)** and **Penguin Group USA LLC (3225)**. 
-
-•	This indicates that Amazon is the primary source for books, but vendors like Hachette and Penguin also have a strong presence. 
 
 
 
-## Recommendations
-
-•	Genres such as **Law, Parenting & relationships**, and **Business & Money** are currently underrepresented in the subscription service, which exhibits an opportunity to enhance diversity and attract more subscribers. Also, focusing on target audience with famous genres can help in increasing Kindle users.
-
-•	The **Vendor Management team** can explore partnerships with top-selling vendors to enhance the catalog and improve variety.
-
-•	With the growing number of reviews, particularly for recent publications, the **Marketing Team** can strategically use campaigns to improve number of customers and subscribers.
 
 
 
